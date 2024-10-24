@@ -165,3 +165,41 @@ body.stellarnav-noscroll-x { overflow-x: hidden; }
 @media only screen and (max-width : 420px) {
 	.stellarnav.mobile .call-btn-mobile.third span, .stellarnav.mobile .location-btn-mobile.third span { display: none; }
 }
+/* hamburger to X */
+.menu-toggle {
+	display: inline-block;
+	cursor: pointer;
+  }
+  
+  .menu-toggle .bars {
+	position: relative;
+	display: inline-block;
+	width: 24px;
+	height: 20px;
+  }
+  
+  .menu-toggle .bars span {
+	display: block;
+	background-color: #333;
+	height: 3px;
+	margin: 4px 0;
+	transition: all 0.3s ease;
+  }
+  
+  .menu-toggle.active .bars span:nth-child(1) {
+	transform: rotate(45deg);
+	top: 8px;
+	position: absolute;
+  }
+  
+  .menu-toggle.active .bars span:nth-child(2) {
+	opacity: 0;
+  }
+  
+  .menu-toggle.active .bars span:nth-child(3) {
+	transform: rotate(-45deg);
+	top: 8px;
+	position: absolute;
+  }
+  /* hamburger to X */
+  
